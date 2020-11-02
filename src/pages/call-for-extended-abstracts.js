@@ -10,8 +10,6 @@ import {Header, Footer} from "./index"
 import variables from "./variables.json"
 
 const title = variables.title
-const email = variables.email
-
 
 const timeline = [
   {
