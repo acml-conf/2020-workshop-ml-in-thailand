@@ -29,7 +29,7 @@ const organizers = [
   {
     name: "Kobkaew Opasjumruskit",
     org: "German Aerospace Center (DLR), Institute of Data Science",
-    web: "kobkaew.opasjumruskit@dlr.de"
+    web: "https://www.linkedin.com/in/kobkaew-opas/"
   },
   {
     name: "Titipat Achakulvisut",
