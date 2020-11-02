@@ -55,13 +55,13 @@ We invite contributions to the MLIT 2020 in the form of an extended abstract. Re
 - Machine learning in agriculture
 - Machine learning for disaster risk management, social good, environmental protection, wildlife conservation, and other issues that Thailand faces.
 
-Topics that are of interest to MLIT 2020 are intentionally kept broad to accommodate diverse groups of researchers and practitioners that are fragmented at this stage. The MLIT 2020 welcomes submissions from everyone regardless of their origin and nationality. Submissions that fall outside of these topics but are considered relevant to machine learning in Thailand are also welcome. In particular, these include purely theoretical research on machine learning conducted in Thailand, regulations and law that govern machine learning usages in Thailand, among others.
+Topics that are of interest to MLIT 2020 are intentionally kept broad to accommodate diverse groups of researchers and practitioners that are fragmented at this stage. **The MLIT 2020 welcomes submissions from everyone regardless of their origin and nationality**. Submissions that fall outside of these topics but are considered relevant to machine learning in Thailand are also welcome. In particular, these include purely theoretical research on machine learning conducted in Thailand, regulations and law that govern machine learning usages in Thailand, among others.
 
 A submission should be of at most one page (paper format: A4, portrait) in English with font size of 11pt in PDF file format. Tables and figures, if any, are allowed, and must fit within the one-page limit. Cited references may extend beyond the 1-page limit. No supplementary material is allowed. The review process will be single-blind; that is, reviewers know the identity of authors, but authors do not know the identity of reviewers. The submission should include all authors’ names, affiliations and email addresses.
 
 All accepted submissions will be made available on the website. Authors of an accepted submission will be invited to give a live, online presentation of 5-8 minutes. The exact presentation length will be decided in due course.
 
-Please submit your extended abstract at ${email}. The submission deadline is Monday 9 November 2020 at 11am (UTC+7, Thailand time).
+Please submit your extended abstract at **${email}**. The submission deadline is Monday 9 November 2020 at 11am (UTC+7, Thailand time).
 `
 
 const dualsubmissionStr = `
