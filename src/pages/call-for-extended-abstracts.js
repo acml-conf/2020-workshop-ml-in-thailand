@@ -13,7 +13,7 @@ const title = variables.title
 
 const timeline = [
   {
-    date: 'November 9, 2020 at 11am (UTC+7, Bangkok time)',
+    date: 'November 9, 2020 at 11am (UTC+7, Thailand time)',
     desc: 'Submission deadline'
   },
   {
@@ -21,7 +21,7 @@ const timeline = [
     desc: 'Notification of acceptance'
   },
   {
-    date: 'November 18, 2020 at 6:30-9pm (UTC+7, Bangkok time)',
+    date: 'November 18, 2020 at 6:30-9pm (UTC+7, Thailand time)',
     desc: 'Workshop day'
   }
 ]
