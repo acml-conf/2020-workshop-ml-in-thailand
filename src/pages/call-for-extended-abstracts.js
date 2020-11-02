@@ -59,7 +59,7 @@ A submission should be of at most one page (paper format: A4, portrait) in Engli
 
 All accepted submissions will be made available on the website. Authors of an accepted submission will be invited to give a live, online presentation of 5-8 minutes. The exact presentation length will be decided in due course.
 
-Please submit your extended abstract at [**our Airtable form**](https://airtable.com/shrnhQ9KuR4ruUTg8). The submission deadline is Monday 9 November 2020 at 11am (UTC+7, Thailand time).
+Please submit your extended abstract at [**our submission portal**](https://airtable.com/shrnhQ9KuR4ruUTg8). The submission deadline is Monday 9 November 2020 at 11am (UTC+7, Thailand time).
 `
 
 const dualsubmissionStr = `
