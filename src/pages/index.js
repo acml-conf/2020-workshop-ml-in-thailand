@@ -35,6 +35,11 @@ const organizers = [
     name: "Titipat Achakulvisut",
     org: "University of Pennsylvania",
     web: "https://titipata.github.io"
+  },
+  {
+    name: "Krikamol Muandet",
+    org: "Max Planck Institute for Intelligent Systems",
+    web: "http://www.krikamol.org"
   }
 ]
 
