@@ -58,6 +58,87 @@ const timeline = [
   }
 ]
 
+const schedules = [
+  {
+    "time": "18:30",
+    "title": "Openning",
+    "speaker": "",
+    "url": ""
+  },
+  {
+    "time": "18:40",
+    "title": "Invited Talk: <title>",
+    "speaker": "TBA",
+    "url": ""
+  },
+  {
+    "time": "19:00",
+    "title": "Contributed Talk 1: <title>",
+    "speaker": "<name>",
+    "url": "www.google.com"
+  },
+  {
+    "time": "19:10",
+    "title": "Contributed Talk 2",
+    "speaker": "__",
+    "url": "www.google.com"
+  },
+  {
+    "time": "19:20",
+    "title": "Contributed Talk 3",
+    "speaker": "__",
+    "url": "www.google.com"
+  },
+  {
+    "time": "19:30",
+    "title": "Contributed Talk 4",
+    "speaker": "__",
+    "url": "www.google.com"
+  },
+  {
+    "time": "19:40",
+    "title": "Break (10 minutes)",
+  },
+  {
+    "time": "19:50",
+    "title": "Contributed Talk 5",
+    "speaker": "__",
+    "url": "www.google.com"
+  },
+  {
+    "time": "20:00",
+    "title": "Contributed Talk 6",
+    "speaker": "__",
+    "url": "www.google.com"
+  },
+  {
+    "time": "20:10",
+    "title": "Contributed Talk 7",
+    "speaker": "__",
+    "url": "www.google.com"
+  },
+  {
+    "time": "20:20",
+    "title": "Contributed Talk 8",
+    "speaker": "Accc CCC",
+    "url": "www.google.com"
+  },
+  {
+    "time": "20:30",
+    "title": "Contributed Talk 9",
+    "speaker": "__",
+    "url": "www.google.com"
+  },
+  {
+    "time": "20:40",
+    "title": "Speed Dating",
+  },
+  {
+    "time": "21:00",
+    "title": "Conclusion",
+  },
+]
+
 const ContentBlock = ({header, children}) => {
   return <div id={header} style={{margin: `2em 0`}}>
     <a href={`#${header}`} style={{color: `black`, textDecoration: `none`}}>
@@ -129,18 +210,43 @@ export default function Home() {
       <ReactMarkdown children={overviewStr}/>
     </ContentBlock>
 
-    <ContentBlock header="News">
+    {/* <ContentBlock header="News">
       <div style={{borderRadius: `5px`, background: `lightgray`, padding: `10px`, textAlign: `center`}}>
         <a href={withPrefix("/call-for-extended-abstracts")}>2020/11/02: Call For Extended Abstracts</a> 
       </div>
-    </ContentBlock>
+    </ContentBlock> */}
 
     <ContentBlock header="Participation:">
       <ReactMarkdown children={variables.participationStr}/>
     </ContentBlock>
 
     <ContentBlock header="Schedule:">
-      TBD
+      <table style={{width: `100%`, borderBottom: `1px solid`}}>
+        <thead>
+          <tr style={{fontWeight: `bold`, color: `white`, background: `black`}}>
+            <td width="100px">Time (GMT+7)</td>
+            <td>Event</td>
+          </tr>
+        </thead>
+        {
+          schedules.map( (event, i) => {
+            return <tr style={{background: (i % 2) == 0 ? `white`: `#eef`}}>
+              <td width="100px" style={{textAlign: `right`, verticalAlign: `top`, padding: `10px`}}><b>{event.time}</b>
+              </td>
+              <td style={{padding: `10px`}}>
+                <b>{event.title}</b>
+                <br/>
+                <div style={{marginTop: `10px`}}>
+                  {event.speaker}
+                </div>
+                {
+                  event.url && <a style={{marginTop: `5px`}} href={event.url}>[Abstract]</a>
+                }
+              </td>
+            </tr>
+          })
+        }
+      </table>
     </ContentBlock>
 
     <Footer/>
