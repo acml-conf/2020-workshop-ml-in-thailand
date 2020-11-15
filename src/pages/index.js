@@ -60,77 +60,88 @@ const timeline = [
 
 const schedules = [
   {
-    "time": "18:30",
+    "time": "18:30-18:40",
     "title": "Openning",
     "speaker": "",
     "url": ""
   },
   {
-    "time": "18:40",
-    "title": "Invited Talk: <title>",
-    "speaker": "TBA",
-    "url": ""
+    "time": "18:40-19:00",
+    "title": "Virtual assistant and avatar: The first step",
+    "speaker": "Kwanchiva Thangthai",
+    "url": "",
+    "label": "Invited Talk",
+    "abstract": "This talk presents the challenge of building a virtual assistant and avatar, focusing solely on speech-related issues. Then, we will share the idea of constructing an audiovisual speech dataset from found data (the video data that are available on the web).  Finally, we will demonstrate the current state of our avatar."
   },
   {
-    "time": "19:00",
-    "title": "Contributed Talk 1: <title>",
-    "speaker": "<name>",
-    "url": "www.google.com"
+    "time": "19:00-19:10",
+    "title": "Transferable Reinforcement Learning for Board Games",
+    "speaker": "Natthaphon Hongcharoen",
+    "url": "",
+    "label": "Contributed Talk 1"
   },
   {
-    "time": "19:10",
-    "title": "Contributed Talk 2",
-    "speaker": "__",
-    "url": "www.google.com"
+    "time": "19:10-19:20",
+    "title": "Improving Google Colaboratory to serve Thailand Machine Learning Community",
+    "speaker": "Korakot Chaovavanich",
+    "url": "files/2-MLIT_Colab_paper2.pdf",
+    "label": "Contributed Talk 2"
   },
   {
-    "time": "19:20",
-    "title": "Contributed Talk 3",
-    "speaker": "__",
-    "url": "www.google.com"
+    "time": "19:20-19:30",
+    "title": "High resolution weakly supervised localization architectures for medical images",
+    "speaker": "Konpat Preechakul",
+    "url": "",
+    "label": "Contributed Talk 3"
   },
   {
-    "time": "19:30",
-    "title": "Contributed Talk 4",
-    "speaker": "__",
-    "url": "www.google.com"
+    "time": "19:30-19:40",
+    "title": "Demystifying Machine Learning Algorithms with Methods of Theoretical Physics",
+    "speaker": "Thiparat Chotibut",
+    "url": "files/1-Chotibut_MLIT_ExtendedAbs_2020.pdf",
+    "label": "Contributed Talk 4"
   },
   {
-    "time": "19:40",
+    "time": "19:40-19:50",
     "title": "Break (10 minutes)",
   },
   {
-    "time": "19:50",
-    "title": "Contributed Talk 5",
-    "speaker": "__",
-    "url": "www.google.com"
+    "time": "19:50-20:00",
+    "title": "Redesigned Skip-Network for Crowd Counting with Dilated Convolution and Backward Connection",
+    "speaker": "Sorn Sooksatra",
+    "url": "",
+    "label": "Contributed Talk 5"
   },
   {
-    "time": "20:00",
-    "title": "Contributed Talk 6",
-    "speaker": "__",
-    "url": "www.google.com"
+    "time": "20:00-20:10",
+    "title": "Rapid Prototyping of an Inexpensive Camera with Low-Code Machine Learning Wildlife Recognition for Pangolin Conservation Research in Thailand",
+    "speaker": "Kanchit Rongchai",
+    "url": "",
+    "label": "Contributed Talk 6"
   },
   {
-    "time": "20:10",
-    "title": "Contributed Talk 7",
-    "speaker": "__",
-    "url": "www.google.com"
+    "time": "20:10-20:20",
+    "title": "A Large-Scale Data Collection from Internet for Thai Language and Speech Processing",
+    "speaker": "Chompakorn Chaksangchaichot",
+    "url": "./files/6-A-Large-Scale-Data-Collection-from-Internet-for-Thai-Language-and-Speech-Processing.pdf",
+    "label": "Contributed Talk 7"
   },
   {
-    "time": "20:20",
-    "title": "Contributed Talk 8",
-    "speaker": "Accc CCC",
-    "url": "www.google.com"
+    "time": "20:20-20:30",
+    "title": "Thai-to-Any-Language Parallel Corpora from Wikipedia Dumps with CRF-based Sentence Segmentation and Multilingual Sentence Encoder",
+    "speaker": "Charin Polpanumas",
+    "url": "./files/4-thxx_mlit2020.pdf",
+    "label": "Contributed Talk 8"
   },
   {
-    "time": "20:30",
-    "title": "Contributed Talk 9",
-    "speaker": "__",
-    "url": "www.google.com"
+    "time": "20:30-20:40",
+    "title": "End-to-end ML Pipelines in Big Retail: Showcases of Recommendation & Search Systems at TOPS Online",
+    "speaker": "Witchapong Daroontham",
+    "url": "./files/8-End-to-end-ML-pipelines-in-Big-Retail.pdf",
+    "label": "Contributed Talk 9"
   },
   {
-    "time": "20:40",
+    "time": "20:40-21:00",
     "title": "Speed Dating",
   },
   {
@@ -219,6 +230,10 @@ export default function Home() {
     <ContentBlock header="Participation:">
       <ReactMarkdown children={variables.participationStr}/>
     </ContentBlock>
+    <ul>
+      <li>Main event: <a href="#">TBD</a></li>
+      <li>Livestream: <a href="#">TBD</a></li>
+    </ul>
 
     <ContentBlock header="Schedule:">
       <table style={{width: `100%`, borderBottom: `1px solid`}}>
@@ -234,13 +249,24 @@ export default function Home() {
               <td width="100px" style={{textAlign: `right`, verticalAlign: `top`, padding: `10px`}}><b>{event.time}</b>
               </td>
               <td style={{padding: `10px`}}>
-                <b>{event.title}</b>
+                <b>{event.title}</b> 
                 <br/>
                 <div style={{marginTop: `10px`}}>
                   {event.speaker}
                 </div>
+                <div style={{marginTop: `5px`, color: `gray`}}>
+                  <span style={{marginRight: `10px`}}>
+                    {event.label}
+                  </span>
+                  {
+                    event.url && <a style={{marginTop: `5px`}} href={withPrefix(event.url)}>[Extended Abstract]</a>
+                  }
+                </div>
                 {
-                  event.url && <a style={{marginTop: `5px`}} href={event.url}>[Abstract]</a>
+                  event.abstract && <details>
+                    <summary>Abstract</summary>
+                    {event.abstract}
+                  </details>
                 }
               </td>
             </tr>
