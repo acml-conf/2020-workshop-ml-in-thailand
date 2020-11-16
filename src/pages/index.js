@@ -109,14 +109,14 @@ const schedules = [
     "time": "19:50-20:00",
     "title": "Redesigned Skip-Network for Crowd Counting with Dilated Convolution and Backward Connection",
     "speaker": "Sorn Sooksatra",
-    "url": "",
+    "url": "./files/7-Redesigned Skip-Network-for-Crowd-Counting-with-Dilated-Convolution-and-Backward-Connection.pdf",
     "label": "Contributed Talk 5"
   },
   {
     "time": "20:00-20:10",
     "title": "Rapid Prototyping of an Inexpensive Camera with Low-Code Machine Learning Wildlife Recognition for Pangolin Conservation Research in Thailand",
     "speaker": "Kanchit Rongchai",
-    "url": "",
+    "url": "./files/9-CameraReady-Rapid-Prototyping-of-an-Inexpensive-Camera-with-Low-Code-Deep-Learning-Wildlife-Recognition-for-Pangolin-Conservation-Research-in-Thailand.pdf",
     "label": "Contributed Talk 6"
   },
   {
@@ -231,8 +231,8 @@ export default function Home() {
       <ReactMarkdown children={variables.participationStr}/>
     </ContentBlock>
     <ul>
-      <li>Main event: <a href="#">TBD</a></li>
-      <li>Livestream: <a href="#">TBD</a></li>
+      <li><a href="https://us02web.zoom.us/j/87430924428?pwd=ajdXVlREQk1ENnBwSzArUXdFZXhXZz09&fbclid=IwAR0SDx6km30CqCZtWE39VZ9r1cK0TVSJbFB4ZFOXT23tCsnEuRyRTEZOZz0#success">Main event (Zoom session)</a></li>
+      <li><a href="https://www.facebook.com/events/381064656310488/?acontext=%7B%22source%22%3A%2229%22%2C%22ref_notif_type%22%3A%22plan_user_joined%22%2C%22action_history%22%3A%22null%22%7D&notif_id=1605520505270387&notif_t=plan_user_joined&ref=notif">Livestream (via Facebook)</a></li>
     </ul>
 
     <ContentBlock header="Schedule:">
